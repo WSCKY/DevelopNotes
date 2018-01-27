@@ -51,4 +51,18 @@ Pin map: (define in gpio_api.c, path: ./hal/targets/hal/TARGET_RDA/TARGET_UNO_91
   PA_6, P18
   PA_7, P19
 
+pwm pinmap:
+  PA_0, PWM_6
+  PA_1, PWM_3
+  PB_0, PWM_2
+  PB_1, PWM_7
+  PB_2, PWM_5
+  PB_3, PWM_4
+  PB_8, PWM_0
+  PC_1, PWM_1
+  PD_0, PWM_0
+  PD_1, PWM_1
+  PD_2, PWM_2
+  PD_3, PWM_3
+
 
