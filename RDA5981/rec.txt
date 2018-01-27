@@ -14,3 +14,41 @@ compile:
   -j <jobs> to control the compile processes on your machine. The default value is 0, which infers the number of processes from the number of cores on your machine. You can use -j 1 to trigger a sequential compile of source code.
   -v or --verbose for verbose diagnostic output.
   -vv or --very_verbose for very verbose diagnostic output.
+
+Pin map: (define in gpio_api.c, path: ./hal/targets/hal/TARGET_RDA/TARGET_UNO_91H/)
+  PB_0, P0
+  PB_1, P1
+  PB_2, P2
+  PB_3, P3
+  PB_4, P4
+  PB_5, P5
+  PB_6, P6
+  PB_7, P7
+  PB_8, P8
+  PB_9, P9
+  PA_8, P10
+  PA_9, P11
+  PC_0, P12
+  PC_1, P13
+  PC_2, P14
+  PC_3, P15
+  PC_4, P16
+  PC_5, P17
+  PC_6, P18
+  PC_7, P19
+  PC_8, P20
+  PC_9, P21
+  PD_0, P22
+  PD_1, P23
+  PD_2, P24
+  PD_3, P25
+  PA_0, P26
+  PA_1, P27
+  PA_2, P14
+  PA_3, P15
+  PA_4, P16
+  PA_5, P17
+  PA_6, P18
+  PA_7, P19
+
+
