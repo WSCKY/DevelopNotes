@@ -1,0 +1,6 @@
+WiFiStackInterface wifi;
+wifi.start_ap -> mbed_lwip_startap_v2
+parameter 'mode' set AP hidden type:
+    default is 0, 0 ~ no hidden, 1 ~ hidden zero len, 2 ~ hidden zero contents
+parameter 'channel' set wifi channel:
+    (channel > 0 && channel < 14)
