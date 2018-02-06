@@ -1,0 +1,16 @@
+获取 opencv 源码
+cd opencv/
+git clone https://github.com/opencv/opencv.git
+cd ../ && mkdir build && cd build/
+编译安装
+cmake ../opencv
+make
+sudo make install
+设置环境变量
+sudo vim /etc/ld.so.conf.d/opencv.conf
+添加 /usr/local/lib
+sudo ldconfig
+sudo gedit /etc/bash.bashrc
+添加
+    PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+    export PKG_CONFIG_PATH
