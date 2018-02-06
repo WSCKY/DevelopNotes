@@ -1,0 +1,7 @@
+图像局部特征点检测算法综述
+https://www.cnblogs.com/ronny/p/4260167.html
+
+http://www.vision.ee.ethz.ch/~surf/index.html
+convert JPG to PGM
+https://cn.office-converter.com/JPG-to-PGM
+
