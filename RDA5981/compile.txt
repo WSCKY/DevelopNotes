@@ -1,0 +1,7 @@
+compile:
+    mbed compile -t GCC_ARM -m UNO_91H --source ./ --source ./TESTS/TARGET_RDA/mpu6500/
+
+param:
+-t TOOLCHAIN
+-m MCU
+--source SOURCE_DIR
