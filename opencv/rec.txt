@@ -1,10 +1,14 @@
 获取 opencv 源码
 cd opencv/
 git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
 cd ../ && mkdir build && cd build/
 编译安装
+/* 这是不安装额外模块的执行命令 */
 cmake ../opencv
-make
+/* 安装额外的模块 */
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules/ ../opencv
+make -j7
 sudo make install
 设置环境变量
 sudo vim /etc/ld.so.conf.d/opencv.conf
@@ -14,3 +18,6 @@ sudo gedit /etc/bash.bashrc
 添加
     PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
     export PKG_CONFIG_PATH
+
+教程地址
+http://blog.sina.com.cn/s/blog_1343c75a40102xvws.html
